@@ -45,8 +45,7 @@ export const IMAGE_SUBTITLES = [
   { value: "", fontClass: "h4" },
   { value: "", fontClass: "h4" },
   {
-    value:
-      "ACTORS / CASTING / CINEMATOGRAPHY / COMPOSING / CUSTOM DESIGN / DIRECTING".toLowerCase(),
+    value: "ACTORS / CASTING / DIRECTING".toLowerCase(),
     fontClass: "h6 P-font",
   },
 ];

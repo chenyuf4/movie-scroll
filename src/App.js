@@ -81,13 +81,13 @@ const App = () => {
         {
           transform: "translateY(0%)",
           duration: 0.43,
-          stagger: 0.003,
+          stagger: 0.008,
           ease: Power4.easeOut,
         },
-        "-=0.8"
+        "-=0.75"
       );
     targetImageRef.current = targetImageIndex;
-  }, 150);
+  }, 100);
 
   const onWheelHandler = useCallback(
     (e) => {
@@ -97,7 +97,7 @@ const App = () => {
         Math.max(Math.abs(pixelX), Math.abs(pixelY)),
         100
       );
-      const scrollSpeed = relativeSpeed * 0.02;
+      const scrollSpeed = relativeSpeed * 0.009;
 
       let direction = "L";
       let horizonal = true;
@@ -143,7 +143,7 @@ const App = () => {
         const oldActiveSubTitleBlockId = `#image-subtitle-${oldActiveImageIndex}`;
         timeline.to(`${oldActiveTitleBlockId} > div`, {
           transform: "translateY(-130%)",
-          duration: 0.35,
+          duration: 0.55,
           ease: Power4.easeOut,
         });
         if (SUBTITLE_SET.has(oldActiveImageIndex))
@@ -151,10 +151,10 @@ const App = () => {
             `${oldActiveSubTitleBlockId} > div`,
             {
               transform: "translateY(-130%)",
-              duration: 0.35,
+              duration: 0.55,
               ease: Power4.easeOut,
             },
-            "-=0.35"
+            "-=0.5"
           );
 
         timeline
