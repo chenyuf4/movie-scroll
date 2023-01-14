@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "GraphikEL-font";
+  src: url("./static/font/GraphikEL.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GraphikL-font";
+  src: url("./static/font/GraphikL.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GraphikR-font";
+  src: url("./static/font/GraphikR.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GraphikRI-font";
+  src: url("./static/font/GraphikRI.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GraphikT-font";
+  src: url("./static/font/GraphikT.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "WTKI-font";
+  src: url("./static/font/WTKI.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "WTKR-font";
+  src: url("./static/font/WTKR.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "P-font";
+  src: url("./static/font/P.woff2") format("woff2");
+}
+
+html,
+body {
+  overflow: hidden;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overscroll-behavior-x: none;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: none;
+  z-index: 1;
+}
+
+.GraphikEL-font {
+  font-family: "GraphikEL-font";
+}
+.GraphikL-font {
+  font-family: "GraphikL-font";
+}
+.GraphikR-font {
+  font-family: "GraphikR-font";
+}
+.GraphikRI-font {
+  font-family: "GraphikRI-font";
+}
+.GraphikT-font {
+  font-family: "GraphikT-font";
+}
+.WTKI-font {
+  font-family: "WTKI-font";
+}
+.WTKR-font {
+  font-family: "WTKR-font";
+}
+.P-font {
+  font-family: "P-font";
+}
