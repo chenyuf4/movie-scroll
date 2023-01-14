@@ -93,10 +93,7 @@ const App = () => {
     (e) => {
       if (!isDesktopOrLaptop || !isHeightEnough) return;
       const { pixelX, pixelY } = normalizeWheel(e);
-      const relativeSpeed = Math.min(
-        Math.max(Math.abs(pixelX), Math.abs(pixelY)),
-        100
-      );
+      const relativeSpeed = Math.max(Math.abs(pixelX), Math.abs(pixelY));
       const scrollSpeed = relativeSpeed * 0.009;
 
       let direction = "L";
